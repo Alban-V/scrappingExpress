@@ -1,9 +1,9 @@
 const express = require('express');
-
 const app = express();
+require('./dbConfig');
 
-const PORT = 5400;
+const port = 5400;
 
-app.listen(PORT, () => {
-    console.log(`Le serveur fonctionne sur le port ${PORT}`);
+app.listen(port, () => {
+    console.log(`Le serveur fonctionne sur le port ${port}`);
 })
